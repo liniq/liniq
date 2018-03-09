@@ -66,7 +66,7 @@
             this.DOM.svg.setAttribute('width','100%');
             this.DOM.svg.setAttribute('height','100%');
             this.DOM.svg.setAttribute('viewbox',`0 0 ${this.rect.width} ${this.rect.height}`);
-            this.DOM.svg.innerHTML = `<path fill="${this.settings.frameFill}" d="${this.paths.initial}"/>`;
+            this.DOM.svg.innerHTML = `<path fill="#ccc" d="${this.paths.initial}"/>`;
             this.DOM.el.insertBefore(this.DOM.svg, this.DOM.nav);
             this.DOM.shape = this.DOM.svg.lastElementChild;
         }
